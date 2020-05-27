@@ -1,3 +1,35 @@
+@font-face {
+    font-family: "Architype Renner W01 Bd";
+    src: url("449cd8fe7d47c8befb82e00fe4a7d48f.eot");
+    /* IE9*/
+    src: url("../fonts/449cd8fe7d47c8befb82e00fe4a7d48f.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/449cd8fe7d47c8befb82e00fe4a7d48f.woff2") format("woff2"),
+        /* chrome、firefox */
+        url("../fonts/449cd8fe7d47c8befb82e00fe4a7d48f.woff") format("woff"),
+        /* chrome、firefox */
+        url("../fonts/449cd8fe7d47c8befb82e00fe4a7d48f.ttf") format("truetype"),
+        /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        url("../fonts/449cd8fe7d47c8befb82e00fe4a7d48f.svg#Architype Renner W01 Bd") format("svg");
+    /* iOS 4.1- */
+}
+
+@font-face {
+    font-family: "Architype Renner W01 Regular";
+    src: url("../fonts/aee8a6ba0a9d7808b6e36a67ba739bc1.eot");
+    /* IE9*/
+    src: url("../fonts/aee8a6ba0a9d7808b6e36a67ba739bc1.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/aee8a6ba0a9d7808b6e36a67ba739bc1.woff2") format("woff2"),
+        /* chrome、firefox */
+        url("../fonts/aee8a6ba0a9d7808b6e36a67ba739bc1.woff") format("woff"),
+        /* chrome、firefox */
+        url("../fonts/aee8a6ba0a9d7808b6e36a67ba739bc1.ttf") format("truetype"),
+        /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        url("../fonts/aee8a6ba0a9d7808b6e36a67ba739bc1.svg#Architype Renner W01 Regular") format("svg");
+    /* iOS 4.1- */
+}
+
 html {
     height: 100%;
 }
@@ -9,4 +41,135 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
+    background-image: url('../background-house.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
+
+/*.navbar {
+    color: white;
+    font-family: "Architype Renner W01 Bd" !important;
+    font-size: 1.5em;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.1px;
+    -moz-osx-font-smoothing: grayscale;
+}*/
+
+.navbar-trans {
+    background: transparent;
+}
+
+.navbar{
+    margin-top: 3%;
+}
+
+.nav-link {
+    color: white !important;
+    font-family: "Architype Renner W01 Bd" !important;
+    font-size: 1.5rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0px;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+
+.my-container{
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 100%;
+}
+
+#mainTitle{
+    font-family: "Architype Renner W01 Bd" !important;
+    font-size: 5rem;
+    color: white;
+    bottom:0;
+}
+
+#secondTitle{
+    font-family: "Architype Renner W01 Regular" !important;
+    color: white;
+    bottom:0;
+}
+
+.row{
+    display: flex;
+    height: 60vh;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    padding: 20px;
+    justify-content: flex-end;
+}
+
+@media (max-width: 1500px) {
+    .nav-link {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav-link {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .nav-link {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        
+    }
+    .nav-link{
+        font-size: 1.3rem;
+    }
+    .my-container{
+        margin-left: 0px;
+        margin-right: 0;
+        height: 100%;
+    }
+    .row{
+        height: 70vh;
+        padding: 30px
+    }
+}
+
+/* Keep logo centered above 768*/
+@media (min-width: 768px) {
+    .navbar-brand.abs
+        {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            text-align: center;
+        }
+    }
+    
+
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.2s ease-in-out 0s;
+  }
+
+.nav-link:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
