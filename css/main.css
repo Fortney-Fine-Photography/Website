@@ -30,39 +30,44 @@
     /* iOS 4.1- */
 }
 
-html {
-    height: 100%;
-}
-
 body {
-    position: absolute;
-    margin: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-image: url('../background-house.jpeg');
+    background: url(/assets/background-house.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
-/*.navbar {
-    color: white;
-    font-family: "Architype Renner W01 Bd" !important;
-    font-size: 1.5em;
+.my-container {
+    max-width: 70%;
+    margin-top: 3%;
+}
+
+.my-row {
+    height: 29vh;
+}
+
+.my-row:nth-child(3){height: 25vh;}
+
+.my-col {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+#copyright{
+    color: white !important;
+    font-family: "Architype Renner W01 Regular" !important;
+    font-size: 1.2rem;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
-    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-width: 0px;
     -moz-osx-font-smoothing: grayscale;
-}*/
-
-.navbar-trans {
-    background: transparent;
+    margin-top: .5vh;
+    height: 3vh;
 }
 
-.navbar{
-    margin-top: 3%;
+.navbar-transparent {
+    background: transparent;
 }
 
 .nav-link {
@@ -75,84 +80,20 @@ body {
     -moz-osx-font-smoothing: grayscale;
     position: relative;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
-
-.my-container{
-    margin-left: 15%;
-    margin-right: 15%;
-    height: auto;
+#bookNow {
+    border: 2px solid white;
+    transition: 0.3s;
 }
 
-#mainTitle{
-    font-family: "Architype Renner W01 Bd" !important;
-    font-size: 5rem;
-    color: white;
-    bottom:0;
+#bookNow:hover {
+    background-color: white;
+    color: red !important;
 }
 
-#secondTitle{
-    font-family: "Architype Renner W01 Regular" !important;
-    color: white;
-    bottom:0;
-}
-
-.row{
-    display: flex;
-    height: 60vh;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    padding: 20px;
-    justify-content: flex-end;
-}
-
-@media (max-width: 1500px) {
-    .nav-link {
-        font-size: 1.3rem;
-    }
-}
-
-@media (max-width: 1200px) {
-    .nav-link {
-        font-size: 1.1rem;
-    }
-}
-
-@media (max-width: 1000px) {
-    .nav-link {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-link{
-        font-size: 1.3rem;
-    }
-    .my-container{
-        margin-left: 0px;
-        margin-right: 0;
-        height: auto;
-    }
-    .row{
-        height: 70vh;
-        padding: 30px
-    }
-}
-
-/* Keep logo centered above 768*/
-@media (min-width: 768px) {
-    .navbar-brand.abs
-        {
-            position: absolute;
-            width: 100%;
-            left: 0;
-            text-align: center;
-        }
-    }
-    
-
-
+/*Underline a tag animations*/
 .nav-link::before {
     content: "";
     position: absolute;
@@ -164,9 +105,92 @@ body {
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.2s ease-in-out 0s;
-  }
+}
 
 .nav-link:hover::before {
     visibility: visible;
     transform: scaleX(1);
-  }
+}
+
+/*Center Logo above 768*/
+@media (min-width: 768px) {
+    .navbar-brand.abs {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+}
+
+
+#mainTitle {
+    color: white !important;
+    font-family: "Architype Renner W01 Bd" !important;
+    font-size: 5rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#secondaryTitle {
+    color: white !important;
+    font-family: "Architype Renner W01 Regular" !important;
+    font-size: 2rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#footer {
+    height: 6.5vh;
+}
+
+.footer-icon {
+    padding-right: 0.5%;
+}
+
+.footer-icon:hover {
+    opacity: 75%;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .nav-link {font-size: 1.4rem;}
+    .my-container{max-width: 85%;}
+}
+
+@media (max-width: 1000px) {
+    .nav-link {font-size: 1.3rem;margin-right: 0px;}
+}
+
+@media (max-width: 900px) {
+    .nav-link {font-size: 1.3rem;}
+}
+
+@media (max-width: 768px) {
+    .my-container{max-width: 95%;}
+    #mainTitle{font-size: 3.5rem;}
+    #secondaryTitle{font-size: 1.75rem;}
+    .my-row:nth-child(2){height: 30vh;}
+    .my-row:nth-child(3){height: 26vh;}
+    #copyright{margin-top: 2vh;}
+}
+
+@media (max-height: 768px){
+    #mainTitle{font-size: 2.5rem;}
+    #secondaryTitle{font-size: 1.25rem;}
+    .my-row:nth-child(2){height: 28vh !important;}
+    .nav-link{padding: 0px !important;font-size: 1.3rem;}
+}
+
+@media (max-height: 576px){
+    #mainTitle{font-size: 2.5rem;}
+    #secondaryTitle{font-size: 1.25rem;}
+    .my-row:nth-child(2){height: 33vh !important;}
+    .my-row:nth-child(3){height: 20vh !important;}
+    .nav-link{padding: 0px !important;}
+}
