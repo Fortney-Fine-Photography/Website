@@ -246,3 +246,7 @@
     background: url(/assets/background-house.jpeg) no-repeat;
     background-size: cover; 
 }
+
+#logo:hover {
+    opacity: 75% !important;
+}
