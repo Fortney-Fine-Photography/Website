@@ -42,25 +42,10 @@ body {
 .my-container {
     max-width: 70%;
     margin-top: 3%;
-    height: 90vh;
 }
 
 .my-row {
-    margin: 0 !important;
-    width: 100%;
-}
-
-.my-row:nth-child(1){
-    height: 8vh;
-}
-
-.my-row:nth-child(2){
-    height: 32vh;
-    width: 100%;
-}
-
-.my-row:nth-child(3){
-    flex-wrap: nowrap;
+    height: 29vh;
 }
 
 .my-col {
@@ -144,84 +129,22 @@ body {
 @media (max-width: 1200px) {
     .nav-link {font-size: 1.4rem;}
     .my-container{max-width: 85%;}
-    #prevWork{
-        font-size: 2.75rem !important;
-    }
 }
 
 @media (max-width: 1000px) {
     .nav-link {font-size: 1.3rem;margin-right: 0px;}
-    
 }
 
 @media (max-width: 900px) {
     .nav-link {font-size: 1.3rem;}
-    #prevWork{
-        font-size: 2.25rem !important;
-    }
 }
 
 @media (max-width: 768px) {
     .my-container{max-width: 85%;}
-    .thumbnail-box{
-        max-width: 50% !important;
-    }
-    .my-row:nth-child(1){
-        height: 20vh;
-    }
-    .my-row:nth-child(2){
-        height: 10vh;
-    }
-    .my-row:nth-child(3){
-        height: 70vh;
-        flex-direction: column;
-        align-items: center;
-    }
-    #prevWork{
-        font-size: 2rem !important;
-    }
-}
-
-
-@media (max-width: 550px) {
-    .thumbnail-box{
-        max-width: 60% !important;
-    }
-}
-
-@media (max-width: 400px) {
-    .thumbnail-box{
-        max-width: 80% !important;
-    }
-    .my-row:nth-child(3){
-        height: 60vh;
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 @media (max-height: 768px){
-    .thumbnail-box{
-        max-width: 60% !important;
-    }
     .nav-link{padding: 0px !important;font-size: 1.3rem;}
-    #prevWork{
-        font-size: 1.5rem !important;
-    }
-    .my-row:nth-child(3){
-        height: 50vh !important;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-height: 950px){
-    .nav-link{padding: 0px !important;font-size: 1.3rem;}
-    .my-row:nth-child(3){
-        height: 65vh;
-        /* flex-direction: column; */
-        align-items: center;
-    }
 }
 
 @media (max-height: 576px){
@@ -244,21 +167,4 @@ body {
 
   #logo:hover {
     opacity: 75% !important;
-}
-
-#prevWork{
-    text-align: center;
-    color: white;
-    font-size: 3.5rem;
-}
-
-.button-thumbnail{
-    margin: 0 4px 0 4px;
-    border: 6px solid white;
-    filter: grayscale(75%);
-}
-
-.button-thumbnail:hover{
-    filter: grayscale(0%);
-    transition: all .1s ease-in 0s;
 }
