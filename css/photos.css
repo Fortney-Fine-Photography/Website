@@ -39,18 +39,53 @@ body {
     min-height: -webkit-fill-available;
 }
 
+.title{
+    color: black;
+    text-align: center;
+    background-color: rgba(255,255,255,0.6);
+}
+
+.title p{
+    font-size: 1.4rem;
+    margin-bottom: 45px;
+    font-family: "Architype Renner W01 regular" !important;
+}
+
+.title h1{
+    font-size: 2.5rem;
+    margin-top: 30px;
+    font-family: "Architype Renner W01 Bd" !important;
+}
+
+#gallery{
+    background-color: rgba(255,255,255,0.6);
+    height: 80%;
+    margin-bottom: 3%;
+}
+
 .my-container {
+    /* border: solid 2px red; */
     max-width: 70%;
     margin-top: 3%;
+    height: auto !important;
 }
 
 .my-row {
-    height: 29vh;
+    /* border: 2px solid green; */
+    height: 8vh;
 }
 
 .my-col {
+    /* border: 3px solid blue; */
     padding-left: 0 !important;
     padding-right: 0 !important;
+}
+
+.portfolio{
+    margin: auto;
+    margin-bottom: 20px;
+    display: block;
+    min-width: 60%;
 }
 
 .navbar-transparent {
@@ -95,6 +130,7 @@ body {
     transition: all 0.2s ease-in-out 0s;
 }
 
+
 .nav-link:hover::before {
     visibility: visible;
     transform: scaleX(1);
@@ -107,6 +143,9 @@ body {
         width: 100%;
         left: 0;
         text-align: center;
+    }
+    .navbar{
+        margin-bottom: 50px;
     }
 }
 
@@ -141,6 +180,24 @@ body {
 
 @media (max-width: 768px) {
     .my-container{max-width: 85%;}
+    .title p{
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+    .title h1{
+        font-size: 1.75rem;
+        margin-top: 10px;
+    }
+    .navbar{
+        margin-bottom: 0px !important;
+    }
+    #gallery{
+        margin-bottom: 8%;
+    }
+    .img-fluid{
+        border: 6px solid white !important;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-height: 768px){
@@ -167,4 +224,21 @@ body {
 
   #logo:hover {
     opacity: 75% !important;
+}
+
+#logo{
+    height: 10vh;
+}
+
+
+.col-lg-3{
+    max-height: 300px;
+}
+
+.img-fluid{
+    border: 10px solid white;
+}
+
+.col-6{
+    padding: 0 5px 0 5px !important; 
 }

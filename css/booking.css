@@ -174,3 +174,7 @@ body {
     background-color: white;
     color: red !important;
 }
+
+#logo{
+    height: 10vh;
+}

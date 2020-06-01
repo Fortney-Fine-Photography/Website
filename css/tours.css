@@ -168,3 +168,7 @@ body {
   #logo:hover {
     opacity: 75% !important;
 }
+
+#logo{
+    height: 10vh;
+}
