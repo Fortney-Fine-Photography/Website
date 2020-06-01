@@ -198,6 +198,9 @@ body {
         border: 6px solid white !important;
         margin-bottom: 10px;
     }
+    #gallery{
+        height: 100% !important;
+    }
 }
 
 @media (max-height: 768px){
