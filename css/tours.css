@@ -1,3 +1,7 @@
+* {
+    -webkit-overflow-scrolling: touch !important;
+}
+
 @font-face {
     font-family: "Architype Renner W01 Bd";
     src: url("449cd8fe7d47c8befb82e00fe4a7d48f.eot");
